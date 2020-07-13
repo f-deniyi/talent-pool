@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif !important;
+}
+
+.user-name{
+  font-size:24px;
+  font-family: 'Poppins', sans-serif
+}
+.title{
+  display:grid;
+  grid-template-columns: auto auto;
+  grid-gap:5em;
+}
+ul.rounded-left{
+  border-top-left-radius:50em !important;
+  border-bottom-left-radius:50em !important;
+}
+.card .user-texts{
+  margin-left: 44px;
+}
+
+
+input, select {
+  font-family: 'Inter', sans-serif !important;
+}
+
+input:focus {
+  outline: none !important;
+  border: none;
+}
+
+.card-img-top {
+  background-image: url('./talentpool\ footer\ logo.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 55%;
+  position: relativel
+}
+
+
+.current-tab{
+  color:white;
+}
+li.current-tab{
+  position:relative;
+}
+.current-tab::before {
+  content: '';
+  position: absolute;
+  top: 53px;
+  width: 55%;
+  height: 3px;
+  background-color: #007bff;
+}
+
+.skills ul {
+  list-style-type: none;
+  background-color: #337AB7;
+  color: white;
+}
+
+.skills li:not(:last-child) {
+  padding-left: 3px;
+}
+
+.skills ul li:not(:last-child)::after {
+  height: 18px;
+  content: " ";
+  /* display: inline-block; */
+  position: absolute;
+  width: 1px;
+  background-color: #e7eaec;
+  /* right: 0; */
+  margin-top: 3px;
+  margin-left: 10px;
+}
+
+@media(max-width:700px) {
+  .card-body {
+    padding: 0 !important ;
+  }
+  .rank.rounded{
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius:0px !important;
+  }
+  .rank{
+    border-top-left-radius: 0.25rem !important;
+    border-top-right-radius: 0.25rem !important;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius:0px !important;
+  }
+  .title{
+    display:flex;
+    justify-content: space-between;
+  }
+  
+  .card ul{
+    justify-content: center;
+  }
+  .title{
+    padding-right:1.25em;
+    padding-left:1.25em;
+  }
+  .rank.p-3{
+    padding:0.5rem !important;
+  }
+  
+  .skills ul{
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0.25rem !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius:0.25rem !important;
+  }
+  #main {
+    width: 100vw !important
+  }
+  #sticky-sidebar {
+    display: none;
+  }
+  #mobile-filter {
+    display: block;
+  }
+  .current-tab::before {
+    top: 43px;
+    width: 20%;
+  }
+}
