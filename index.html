@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='./assets/style.css' rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&amp;display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300&family=Oswald:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <title>Talent Pool | Ranking</title>
+</head>
+
+<body>
+
+  <main class="directory-container">
+    <div class="div bg-primary">
+      <div class="container">
+        <div class="d-md-flex text-center text-white align-items-center justify-content-between">
+          <div class="brand">
+            <img src="./assets/talentpool footer logo.svg" alt="">
+          </div>
+          <h1>Leader Board</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid main">
+      <div class="row">
+
+        <div class="col-lg-3">
+          <div class="filters">
+            <div class="tab">
+              <span>
+                <h2 class="title">
+                  Filters
+                </h2>
+              </span>
+            </div>
+            <div class="tab has-content ">
+              <span data-target="#skillsContent" data-toggle="collapse" aria-controls="skillsContent" class="collapsed"
+                aria-expanded="false">
+                Skills
+                <i class="fa fa-angle-down rotate-icon "></i>
+              </span>
+              <div id="skillsContent" class="content collapse">
+
+                <div class="form-check">
+                  <input type="checkbox" id="checkbox-UI" value="UI" class="form-check-input">
+                  <label for="checkbox-UI" class="form-check-label"><span></span>UI</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" id="checkbox-UX" value="UX" class="form-check-input">
+                  <label for="checkbox-UX" class="form-check-label"><span></span>UX</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" id="checkbox-Figma" value="Figma" class="form-check-input">
+                  <label for="checkbox-Figma" class="form-check-label"><span></span>Figma</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" id="checkbox-Sketch" value="Sketch" class="form-check-input">
+                  <label for="checkbox-Sketch" class="form-check-label"><span></span>Sketch</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" id="checkbox-JavaScript" value="JavaScript" class="form-check-input">
+                  <label for="checkbox-JavaScript" class="form-check-label"><span></span>JavaScript</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" id="checkbox-Mobile" value="Mobile" class="form-check-input">
+                  <label for="checkbox-Mobile" class="form-check-label"><span></span>Mobile</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" id="checkbox-FrontEnd" value="FrontEnd" class="form-check-input">
+                  <label for="checkbox-FrontEnd" class="form-check-label"><span></span>FrontEnd</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" id="checkbox-Backend" value="Backend" class="form-check-input">
+                  <label for="checkbox-Backend" class="form-check-label"><span></span>Backend</label>
+                </div>
+              </div>
+            </div>
+            <div class="tab">
+              <span>
+                Years of Experience
+              </span>
+              <div>
+                <select class="form-control">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="tab">
+              <span>
+                Age
+              </span>
+              <div>
+                <select class="form-control">
+                  <option>0</option>
+                  <option>20</option>
+                  <option>21</option>
+                  <option>22</option>
+                  <option>23</option>
+                  <option>24</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="tab">
+              <span>
+                Location
+              </span>
+              <div>
+                <select class="form-control">
+                  <option disabled="" selected="">Region</option>
+                  <option>Nigeria</option>
+                  <option>USA</option>
+                  <option>UK</option>
+                  <option>China</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="tab has-content">
+              <span data-target="#availabilityContent" data-toggle="collapse" aria-controls="availabilityContent"
+                class="collapsed" aria-expanded="false">
+                Availability
+                <i class="fa fa-angle-down rotate-icon"></i>
+              </span>
+              <div id="availabilityContent" class="content collapse">
+              </div>
+            </div>
+          </div>
+          <div class="info">
+            <p>
+              Scroll through our list of qualified graduates or sort with the filter
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-9">
+
+          <div class="search-bar">
+            <!-- <div class="search-box form-group">
+              <span class="fa fa-search form-control-icon" aria-hidden="true"></span>
+              <input class="form-control" type="text" placeholder="Search Directory with keywords">
+            </div> -->
+
+            <div class="top-links">
+              <div class="row align-items-center">
+                <div class="col-sm-8">
+                  <ul class="nav nav-pills flex-column flex-sm-row ">
+                    <li class="nav-link flex-sm-fill text-center"><a href="#">All</a></li>
+                    <li class="nav-link flex-sm-fill text-center"><a href="#">Design</a></li>
+                    <li class="nav-link flex-sm-fill text-center"><a href="#">Mobile</a></li>
+                    <li class="nav-link flex-sm-fill text-center current-tab"><a href="#">Frontend</a></li>
+                    <li class="nav-link flex-sm-fill text-center"><a href="#">Backend</a></li>
+                  </ul>
+                  <hr>
+                </div>
+                <div class="col-sm-4 d-flex justify-content-around right-filter">
+                  <div class="sort">
+                    <select class="form-control">
+                      <option>Relevance</option>
+                      <option>Name</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="user-cards my-3">
+            <div class="user-card-inner card  shadow d-md-flex ">
+              <div class="card-body d-md-flex justify-content-between   align-items-center pr-0">
+                <h5 class='rank rounded bg-primary p-3 text-white'>1</h5>
+                <div class="title">
+                  <div class="user-card-image-container">
+                    <div class="user-profile">
+                      <img src="./assets/Adelanke.svg" class='img-fluid rounded-circle ' width='85px' height='85px'
+                        alt="">
+                    </div>
+                  </div>
+                  <div class="user-texts">
+                    <h4 class='user-name'>Nelson Fideli</h4>
+                    <h6 class='stack'>Frontend</h6>
+                    <h6 class="ratings">5.0</h6>
+                  </div>
+                </div>
+                <div class="profile text-center">
+                  <a href="./internProfile.html">View profile</a>
+                  <div class="skills">
+                    <ul class='d-flex justify-content-center py-2 px-4 rounded-half-pill mb-0 rounded-left'>
+                      <li class='pr-3'>UX</li>
+                      <li class='pr-3'>Figma</li>
+                      <li class='pr-3'>Sketch</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="user-cards my-3">
+              <div class="user-card-inner card  shadow d-md-flex ">
+                <div class="card-body d-md-flex justify-content-between   align-items-center pr-0">
+                  <h5 class='rank rounded bg-primary p-3 text-white'>2</h5>
+                  <div class="title">
+                    <div class="user-card-image-container">
+                      <div class="user-profile">
+                        <img src="./assets/Adelanke.svg" class='img-fluid rounded-circle ' width='85px' height='85px'
+                          alt="">
+                      </div>
+                    </div>
+                    <div class="user-texts">
+                      <h4 class='user-name'>Martha Bello</h4>
+                      <h6 class='stack'>Frontend</h6>
+                      <h6 class="ratings">5.0</h6>
+                    </div>
+                  </div>
+                  <div class="profile text-center">
+                    <a href="./internProfile.html">View profile</a>
+                    <div class="skills">
+                      <ul class='d-flex justify-content-center py-2 px-4 rounded-half-pill mb-0 rounded-left'>
+                        <li class='pr-3'>JavaScript</li>
+                        <li class='pr-3'>Figma</li>
+                        <li class='pr-3'>Sketch</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="user-cards my-3">
+                <div class="user-card-inner card  shadow d-md-flex justify-content-between">
+                  <div class="card-body d-md-flex justify-content-between   align-items-center pr-0">
+                    <h5 class='rank rounded bg-primary p-3 text-white'>3</h5>
+                    <div class="title">
+                      <div class="user-card-image-container">
+                        <div class="user-profile">
+                          <img src="./assets/Adelanke.svg" class='img-fluid rounded-circle ' width='85px' height='85px'
+                            alt="">
+                        </div>
+                      </div>
+                      <div class="user-texts">
+                        <h4 class='user-name'>Obinna Nneji</h4>
+                        <h6 class='stack'>Frontend</h6>
+                        <h6 class="ratings">5.0</h6>
+                      </div>
+                    </div>
+                    <div class="profile text-center">
+                      <a href="./internProfile.html">View profile</a>
+                      <div class="skills">
+                        <ul class='d-flex justify-content-center py-2 px-4 rounded-half-pill mb-0 rounded-left'>
+                          <li class='pr-3'>UX</li>
+                          <li class='pr-3'>Figma</li>
+                          <li class='pr-3'>Sketch</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="user-cards my-3">
+                  <div class="user-card-inner card  shadow d-md-flex justify-content-between">
+                    <div class="card-body d-md-flex justify-content-between   align-items-center pr-0">
+                      <h5 class='rank rounded bg-primary p-3 text-white'>4</h5>
+                      <div class="title">
+                        <div class="user-card-image-container">
+                          <div class="user-profile">
+                            <img src="./assets/Adelanke.svg" class='img-fluid rounded-circle ' width='85px'
+                              height='85px' alt="">
+                          </div>
+                        </div>
+                        <div class="user-texts">
+                          <h4 class='user-name'>Nelson Fideli</h4>
+                          <h6 class='stack'>Frontend</h6>
+                          <h6 class="ratings">5.0</h6>
+                        </div>
+                      </div>
+                      <div class="profile text-center">
+                        <a href="./internProfile.html">View profile</a>
+                        <div class="skills">
+                          <ul class='d-flex justify-content-center py-2 px-4 rounded-half-pill mb-0 rounded-left'>
+                            <li class='pr-3'>UX</li>
+                            <li class='pr-3'>Figma</li>
+                            <li class='pr-3'>Sketch</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="user-cards my-3">
+                    <div class="user-card-inner card  shadow d-md-flex justify-content-between">
+                      <div class="card-body d-md-flex justify-content-between   align-items-center pr-0">
+                        <h5 class='rank rounded bg-primary p-3 text-white'>5</h5>
+                        <div class="title">
+                          <div class="user-card-image-container">
+                            <div class="user-profile">
+                              <img src="./assets/Adelanke.svg" class='img-fluid rounded-circle ' width='85px'
+                                height='85px' alt="">
+                            </div>
+                          </div>
+                          <div class="user-texts">
+                            <h4 class='user-name'>Nelson Fideli</h4>
+                            <h6 class='stack'>Frontend</h6>
+                            <h6 class="ratings">5.0</h6>
+                          </div>
+                        </div>
+                        <div class="profile text-center">
+                          <a href="./internProfile.html">View profile</a>
+                          <div class="skills">
+                            <ul class='d-flex justify-content-center py-2 px-4 rounded-half-pill mb-0 rounded-left'>
+                              <li class='pr-3'>JavaScript</li>
+                              <li class='pr-3'>Figma</li>
+                              <li class='pr-3'>Sketch</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="user-cards my-3">
+                      <div class="user-card-inner card  shadow d-md-flex justify-content-between">
+                        <div class="card-body d-md-flex justify-content-between   align-items-center pr-0">
+                          <h5 class='rank rounded bg-primary p-3 text-white'>6</h5>
+                          <div class="title">
+                            <div class="user-card-image-container">
+                              <div class="user-profile">
+                               
+                                <img src="./assets/Adelanke.svg" class='img-fluid rounded-circle ' width='85px'
+                                  height='85px' alt="">
+                              </div>
+                              
+                            </div>
+                            <div class="user-texts">
+                              <h4 class='user-name'>Julia Orji</h4>
+                              <h6 class='stack'>Frontend</h6>
+                              <h6 class="ratings">5.0</h6>
+                            </div>
+                           
+                          </div>
+                          <div class="profile text-center">
+                            <a href="./internProfile.html">View profile</a>
+                            <div class="skills">
+                              <ul class='d-flex justify-content-center py-2 px-4 rounded-half-pill mb-0 rounded-left'>
+                                <li class='pr-3'>JavaScript</li>
+                                <li class='pr-3'>Figma</li>
+                                <li class='pr-3'>Sketch</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="user-cards my-3">
+                        <div class="user-card-inner card  shadow d-md-flex justify-content-between">
+                          <div class="card-body d-md-flex justify-content-between   align-items-center pr-0">
+                            <h5 class='rank rounded bg-primary p-3 text-white'>7</h5>
+                            <div class="title">
+                              <div class="user-card-image-container">
+                                <div class="user-profile">
+                                  <img src="./assets/Adelanke.svg" class='img-fluid rounded-circle ' width='85px'
+                                    height='85px' alt="">
+                                </div>
+                              </div>
+                              <div class="user-texts">
+                                <h4 class='user-name'>Jaden Tega</h4>
+                                <h6 class='stack'>Frontend</h6>
+                                <h6 class="ratings">5.0</h6>
+                              </div>
+                            </div>
+                            <div class="profile text-center">
+                              <a href="./internProfile.html">View profile</a>
+                              <div class="skills">
+                                <ul class='d-flex justify-content-center py-2 px-4 rounded-half-pill mb-0 rounded-left'>
+                                  <li class='pr-3'>UI</li>
+                                  <li class='pr-3'>UX</li>
+                                  <li class='pr-3'>Figma</li>
+                                  <li class='pr-3'>Sketch</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
