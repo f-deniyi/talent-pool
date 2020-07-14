@@ -52,7 +52,7 @@ li.current-tab{
   content: '';
   position: absolute;
   top: 53px;
-  width: 55%;
+  width: 40%;
   height: 3px;
   background-color: #007bff;
 }
@@ -80,6 +80,10 @@ li.current-tab{
 }
 
 @media(max-width:700px) {
+  .users-cards{
+    margin:auto;
+    width:90% !important;
+  }
   .card-body {
     padding: 0 !important ;
   }
@@ -118,6 +122,9 @@ li.current-tab{
   #main {
     width: 100vw !important
   }
+  main .position-fixed{
+position:unset !important;
+  }
   #sticky-sidebar {
     display: none;
   }
@@ -127,5 +134,19 @@ li.current-tab{
   .current-tab::before {
     top: 43px;
     width: 20%;
+  }
+}
+@media(max-width:1000px){
+  main .position-fixed{
+    position:unset !important;
+      }
+}
+@media(min-width:1366px){
+  .users-cards{
+    margin:auto;
+    width:80% !important;
+  }
+  .current-tab::before {
+    width: 30%;
   }
 }
